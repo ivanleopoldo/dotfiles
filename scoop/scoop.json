@@ -1,0 +1,108 @@
+{
+    "apps": [
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-23T02:24:17.2411281+08:00",
+            "Version": "23.00",
+            "Name": "7zip"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-22T23:57:57.041219+08:00",
+            "Version": "3.11.2",
+            "Name": "dark"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-23T00:53:48.1983364+08:00",
+            "Version": "0.40.0",
+            "Name": "fzf"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-22T23:57:26.4792157+08:00",
+            "Version": "2.29.0",
+            "Name": "gh"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-24T15:58:11.673716+08:00",
+            "Version": "1.5.1",
+            "Name": "glow"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-22T23:54:40.4346987+08:00",
+            "Version": "0.9.0",
+            "Name": "neovim"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-22T23:57:49.5046994+08:00",
+            "Version": "1.1.11",
+            "Name": "nvm"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-22T23:57:18.7610015+08:00",
+            "Version": "7.3.4",
+            "Name": "pwsh"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Updated": "2023-05-22T23:59:58.6284114+08:00",
+            "Version": "3.8.10",
+            "Name": "python38"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-24T16:14:43.4802179+08:00",
+            "Version": "13.0.0",
+            "Name": "ripgrep"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Updated": "2023-05-23T00:17:24.0906107+08:00",
+            "Version": "1.14.2",
+            "Name": "starship"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Updated": "2023-05-23T02:25:35.2169312+08:00",
+            "Version": "1.78.2",
+            "Name": "vscode"
+        }
+    ],
+    "buckets": [
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2023-05-24T13:49:45+08:00",
+            "Manifests": 1867
+        },
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main.git",
+            "Updated": "2023-05-24T12:26:17+08:00",
+            "Manifests": 1198
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2023-05-24T14:45:49+08:00",
+            "Manifests": 424
+        }
+    ]
+}

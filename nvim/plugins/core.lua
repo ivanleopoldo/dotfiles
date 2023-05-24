@@ -29,6 +29,12 @@ return {
         hide_dotfiles = false,
       }
     end,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    build = "cd app && yarn install",
+    enabled = true,
+    ft = "markdown",
   }
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
@@ -59,7 +65,7 @@ return {
   --           -- don't add a pair if  the previous character is xxx
   --           :with_pair(
   --             cond.not_before_regex("xxx", 3)
-  --           )
+  --           )C:\Users\milk\AppData\Local\nvim-data\lazy\markdown-preview.nvim
   --           -- don't move right when repeat character
   --           :with_move(cond.none())
   --           -- don't delete if the next character is xx
