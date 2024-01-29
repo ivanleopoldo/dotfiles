@@ -6,6 +6,4 @@
 
 - tmux
   - tmux-plugins/tpm
-- neovim
-  - AstroNvim
 - kitty terminal

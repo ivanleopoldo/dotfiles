@@ -4,7 +4,4 @@ iterm2/
 thefuck/
 yarn/
 tmux/**
-
-nvim/**
-!nvim/lua/
-!nvim/lua/user/
+nvim/
