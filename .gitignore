@@ -6,3 +6,4 @@ yarn/
 tmux/plugins/
 flutter/
 github-copilot/
+.DS_Store
