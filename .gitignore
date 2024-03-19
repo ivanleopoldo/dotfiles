@@ -3,5 +3,6 @@ gh/
 iterm2/
 thefuck/
 yarn/
-tmux/**
-nvim/
+tmux/plugins/
+flutter/
+github-copilot/
