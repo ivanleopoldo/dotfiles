@@ -1,6 +1,6 @@
 # Personal Dotfiles for MacOS
 
-![alt text]()
+![alt text](https://github.com/ivanleopoldo/dotfiles/blob/macos/.assets/thumbnail.png?raw=true "Thumbnail")
 
 ## Pre-requisites
 1. [tmux](tmux.github.io)
