@@ -2,6 +2,8 @@
 
 ![alt text](https://github.com/ivanleopoldo/dotfiles/blob/macos/.assets/thumbnail.png?raw=true "Thumbnail")
 
+A collection of my personal dotfiles for MacOS.
+
 ## Pre-requisites
 1. [tmux](tmux.github.io)
 2. [kitty](https://sw.kovidgoyal.net/kitty/)
@@ -9,6 +11,8 @@
 4. [ohmyzsh](https://ohmyz.sh)
 
 ## Installation
+
+> Without ohmyzsh theme
 
 Using [git](https://git-scm.com):
 ```bash
@@ -18,6 +22,18 @@ git clone https://github.com/ivanleopoldo/dotfiles.git ~/.config/
 Using [gh](https://cli.github.com):
 ```bash
 gh repo clone ivanleopoldo/dotfiles ~/.config/
+```
+
+> With ohmyzsh theme
+
+Using [git](https://git-scm.com):
+```bash
+git clone --recursive https://github.com/ivanleopoldo/dotfiles.git ~/.config/
+```
+
+Using [gh](https://cli.github.com):
+```bash
+gh repo clone ivanleopoldo/dotfiles ~/.config/ --- --recursive
 ```
 
 ## Usage
