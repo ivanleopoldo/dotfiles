@@ -6,6 +6,7 @@
 1. [tmux](tmux.github.io)
 2. [kitty](https://sw.kovidgoyal.net/kitty/)
 3. [neovim](https://neovim.io)
+4. [ohmyzsh](https://ohmyz.sh)
 
 ## Installation
 
@@ -19,8 +20,12 @@ Using [gh](https://cli.github.com):
 gh repo clone ivanleopoldo/dotfiles ~/.config/
 ```
 
-## TODO
+## Usage
 
-- [ ] parallel themes for tmux, kitty, nvim
-- [ ] notion plugin nvim
-- [ ] tmux custom keybindings
+Just clone the repository and kitty, neovim, tmux will work right away.
+
+To use my ohmyzsh configuration, delete contents of `~/.zshrc` and replace with:
+
+```bash
+source ~/.config/zsh/.zshrc
+```
