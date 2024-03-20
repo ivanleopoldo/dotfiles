@@ -1,5 +1,3 @@
-# Personal Dotfiles for MacOS
-
 ![alt text](https://github.com/ivanleopoldo/dotfiles/blob/macos/.assets/thumbnail.png?raw=true "Thumbnail")
 
 A collection of my personal dotfiles for MacOS.
