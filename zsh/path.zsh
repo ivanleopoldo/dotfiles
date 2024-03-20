@@ -1,5 +1,3 @@
-# ZSH
-export ZSH="$HOME/.oh-my-zsh"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
