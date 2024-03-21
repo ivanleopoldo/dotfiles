@@ -13,6 +13,7 @@ vim.api.nvim_create_autocmd({ "ColorScheme", "VimEnter" }, {
     vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { fg = colors.subtext2 })
     vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { fg = colors.subtext2 })
     vim.api.nvim_set_hl(0, "NeoTreeTitleBar", { fg = colors.subtext2 })
+    vim.api.nvim_set_hl(0, "NeoTreeDirectoryName", { fg = colors.red })
 
     vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = colors.subtext2 })
     vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { fg = colors.subtext2 })
@@ -24,5 +25,8 @@ vim.api.nvim_create_autocmd({ "ColorScheme", "VimEnter" }, {
     vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = colors.subtext2 })
     vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { fg = colors.subtext2 })
     vim.api.nvim_set_hl(0, "NoiceCmdlineIcon", { fg = colors.subtext2 })
+
+    vim.api.nvim_set_hl(0, "@keyword", { fg = colors.red })
+    vim.api.nvim_set_hl(0, "@tag", { fg = colors.red })
   end,
 })
