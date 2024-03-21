@@ -1,7 +1,6 @@
 ![alt text](https://github.com/ivanleopoldo/dotfiles/blob/macos/.assets/thumbnail.png?raw=true "Thumbnail")
-![alt text](https://github.com/ivanleopoldo/dotfiles/blob/macos/.assets/image.png?raw=true "Image")
 
-A collection of my personal configuration files for MacOS heavily using the [Oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim) theme by [Nyoom Engineering](https://github.com/nyoom-engineering).
+A collection of my personal terminal configuration files for MacOS heavily using the [Oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim) theme by [Nyoom Engineering](https://github.com/nyoom-engineering).
 
 ## Requirements
 1. [tmux](tmux.github.io)
@@ -11,22 +10,15 @@ A collection of my personal configuration files for MacOS heavily using the [Oxo
 
 ## Installation
 
-Using [git](https://git-scm.com):
+#### All configurations
+
+Paste this into your terminal:
+
 ```bash
 git clone https://github.com/ivanleopoldo/dotfiles.git ~/.config/
 ```
 
-Using [gh](https://cli.github.com):
-```bash
-gh repo clone ivanleopoldo/dotfiles ~/.config/
-```
-
-Add `--resursive` to clone the submodules ([powerlevel10k](https://github.com/romkatv/powerlevel10k]))
-
-## Usage
-> Back up your configuration files before following!
-
-Just clone the repository and kitty, neovim, tmux will work right away.
+Add `--resursive` to clone the submodules ([powerlevel10k](https://github.com/romkatv/powerlevel10k]), zsh theme)
 
 To use my ohmyzsh configuration, delete contents of `~/.zshrc` and replace with:
 
@@ -34,9 +26,27 @@ To use my ohmyzsh configuration, delete contents of `~/.zshrc` and replace with:
 source ~/.config/zsh/.zshrc
 ```
 
+#### Specific configurations
+
+If you want to only clone specific configuration, you can do so by:
+
+```bash
+git clone --no-checkout https://github.com/ivanleopoldo/dotfiles.git ~/.config/
+cd ~/.config
+git sparse-checkout set --cone
+git checkout macos
+git sparse-checkout set <folders> # kitty nvim
+```
+If zsh configuration is included, clone [powerlevel10k](https://github.com/romkatv/powerlevel10k) to `zsh/themes` folder.
+
+## Gallery
+
+![alt text](https://github.com/ivanleopoldo/dotfiles/blob/macos/.assets/image.png?raw=true "Image")
+
 ## TODO
-- [ ] Add installation script preferably CLI tool
+- [ ] Add installation script preferably a CLI tool
 - [ ] Make configuration organized
 - [ ] Add more documentation
-- [ ] Create parent repo
-  - [ ] Make separate repos for each configuration
+- [ ] Add more screenshots in the gallery
+- [ ] Add parent repo
+  - [ ] Children repo for each configuration
