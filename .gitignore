@@ -6,3 +6,4 @@ tmux/plugins/
 flutter/
 github-copilot/
 .DS_Store
+nvim/lua/private/
