@@ -13,3 +13,16 @@ export PATH="$PATH:/Users/ivanleopoldo/.gem/ruby/2.6.0/bin"
 # Rust
 export PATH="$PATH:$HOME/.rvm/bin"
 . "$HOME/.cargo/env"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# bun completions
+[ -s "/Users/ivanleopoldo/.bun/_bun" ] && source "/Users/ivanleopoldo/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="$PATH:/Users/ivanleopoldo/.kenv/bin"

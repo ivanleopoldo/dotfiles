@@ -1,0 +1,11 @@
+<!DOCTYPE FMFPreferences>
+<Preferences version="3.0">
+ <Paths pathLastImage="/Users/ivanleopoldo/Downloads" pathLastFontSet="/Applications/Find my Font-free.app/Contents/MacOS/../../../../../_samples/images"/>
+ <Matching MatchingAccuracy="50" Pass2TopMatch="12" Pass1MinMatch="75" AppendMissingOblique="true" Pass2MinMatch="75" Pass1TopMatch="16" AppendMissingBold="false" Pass1MaxMatches="200"/>
+ <UI socketPort="1965" opLocalSearchEnabled="true" VersionToIgnore="" BrowseSearchNoFakes="false" StartupCheckForUpdates="true" AppWinRectX="239" opOnlineSearchEnabled="true" AppWinRectY="162" FloodCopyTolerance="50" LogMaxDaysToKeep="4" LogMaxDaysToKeep="4" opOnlineSearchType="0" ShowFontDetails="false" ScreenshotDelayMSec="1500" appRunCount="2" AppWinMaximized="false" showFbShareLike="true" SandboxTest="0" BrowseMaxMatchesToShow="5000" HorizSplitterStrech="59" VersionIgnoreUntil="" SAiAccountId="" LogLevel="2" VertSplitterStrech="59" AppWinRectHeight="751" StartupShowGettingStarted="true" MobileAppId="" BrowseSearchCaseSensitive="false" AppWinRectWidth="1202" MaxMatchesToShow="40" AppLangCode="en" IndexFontToDispLetRanges="Verdana" BrowseSearchBeginsWith="false"/>
+ <Network netProxyPort="" netProxyType="0" netProxyURL=""/>
+ <IndexLetRanges>
+  <LetterRange ToLet="127" FromLet="32"/>
+ </IndexLetRanges>
+ <FontsBlackList/>
+</Preferences>
