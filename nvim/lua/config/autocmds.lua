@@ -30,3 +30,10 @@ vim.api.nvim_create_autocmd({ "ColorScheme", "VimEnter" }, {
     vim.api.nvim_set_hl(0, "@tag", { fg = colors.red })
   end,
 })
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, {
+  pattern = "*",
+  callback = function()
+    vim.api.nvim_command("TailwindSortOnSaveToggle")
+  end,
+})
