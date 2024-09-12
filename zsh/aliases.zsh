@@ -1,5 +1,7 @@
 # Simple Aliases
 
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
 # Python
 alias python="python3"
 alias py="python3"

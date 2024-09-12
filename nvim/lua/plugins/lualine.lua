@@ -13,7 +13,7 @@ return {
       vim.o.laststatus = 0
     end
   end,
-  opts = function()
+  opts = function(_, opts)
     local lualine_require = require("lualine_require")
     lualine_require.require = require
 
