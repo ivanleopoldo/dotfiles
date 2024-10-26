@@ -7,3 +7,5 @@ flutter/
 github-copilot/
 .DS_Store
 nvim/lua/private/
+raycast/
+karabiner/
