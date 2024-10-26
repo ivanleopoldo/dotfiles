@@ -15,7 +15,10 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
 ZSH_CUSTOM=~/.config/zsh/
-plugins=(git gh zoxide)
+ZSH_TMUX_AUTOSTART=true
+
+plugins=(git gh zoxide tmux)
+
 source $ZSH/oh-my-zsh.sh
 
 # bun completions
