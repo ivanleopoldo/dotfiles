@@ -1,12 +1,12 @@
 return {
   "stevearc/conform.nvim",
-  lazy = true,
+  lazy = false,
   event = { "BufReadPre", "BufNewFile" },
   opts = function()
     local opts = {
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "black" },
+        python = { "isort", "black" },
         javascript = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
@@ -22,6 +22,9 @@ return {
         prettier = {
           single_quote = true,
           jsx_single_quote = true,
+        },
+        black = {
+          prepend_args = { "--fast" },
         },
       },
     }

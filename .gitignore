@@ -9,3 +9,5 @@ github-copilot/
 nvim/lua/private/
 raycast/
 karabiner/
+
+nvim/lazy-lock.json
