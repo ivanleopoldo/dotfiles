@@ -5,6 +5,7 @@ fi
 
 eval "$(zoxide init --cmd cd zsh)"
 
+eval "$(tmux source ~/.config/tmux/tmux.conf)"
 
 
 # ZSH
