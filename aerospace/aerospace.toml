@@ -95,7 +95,7 @@ outer.right =      7
 cmd-h = []
 cmd-alt-h = []
 
-cmd-ctrl-k = 'fullscreen'
+cmd-ctrl-i = 'fullscreen'
 cmd-ctrl-space = 'layout floating tiling'
 
 cmd-ctrl-shift-h = 'join-with left'
@@ -108,10 +108,10 @@ cmd-ctrl-period = 'layout tiles horizontal vertical'
 cmd-ctrl-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-ctrl-j = 'focus down'
-ctrl-h = 'focus left'
-ctrl-k = 'focus up'
-ctrl-l = 'focus right'
+cmd-ctrl-j = 'focus down'
+cmd-ctrl-h = 'focus left'
+cmd-ctrl-k = 'focus up'
+cmd-ctrl-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 cmd-shift-h = 'move left'
@@ -120,8 +120,7 @@ cmd-shift-k = 'move up'
 cmd-shift-l = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-cmd-shift-minus = 'resize smart -50'
-cmd-shift-equal = 'resize smart +50'
+cmd-ctrl-quote = 'mode resize'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 cmd-1 = 'workspace 1'
@@ -140,6 +139,12 @@ cmd-shift-backtick = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-ctrl-semicolon = 'mode service'
+
+# resize mode
+[mode.resize.binding]
+f = 'resize smart +50'
+e = 'resize smart -50'
+esc = 'mode main'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
