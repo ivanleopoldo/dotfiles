@@ -129,16 +129,17 @@ cmd-3 = 'workspace 3'
 cmd-4 = 'workspace 4'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-cmd-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
-cmd-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
-cmd-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
-cmd-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
+cmd-ctrl-1 = 'move-node-to-workspace 1 --focus-follows-window'
+cmd-ctrl-2 = 'move-node-to-workspace 2 --focus-follows-window'
+cmd-ctrl-3 = 'move-node-to-workspace 3 --focus-follows-window'
+cmd-ctrl-4 = 'move-node-to-workspace 4 --focus-follows-window'
 
 cmd-backtick = 'workspace-back-and-forth'
 cmd-shift-backtick = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-ctrl-semicolon = 'mode service'
+cmd-ctrl-enter = 'mode apps'
 
 # resize mode
 [mode.resize.binding]
@@ -153,3 +154,7 @@ esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
+
+[mode.apps.binding]
+t = 'exec-and-forget open -a kitty.app -n --args tmux new-session \; new-window'
+esc = 'mode main'
