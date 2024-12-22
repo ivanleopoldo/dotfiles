@@ -13,13 +13,13 @@ Swipe:start(4, function(direction, distance, id)
 		if distance > threshold then
 			threshold = math.huge -- only trigger once per swipe
 			if direction == "left" then
-				aerospaceExec("workspace --wrap-around next")
+				aerospaceExec("workspace next")
 			elseif direction == "right" then
-				aerospaceExec("workspace --wrap-around prev")
+				aerospaceExec("workspace prev")
 			end
 		end
 	else
 		current_id = id
-		threshold = 0.001 -- swipe distance > 10% of trackpad
+		threshold = 0
 	end
 end)
