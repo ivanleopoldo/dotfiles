@@ -54,7 +54,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '44px'
+    top: '34px'
     right: '6px'
     bottom: '6px'
     left: '6px'
@@ -62,11 +62,10 @@ gaps:
 window_effects:
   # Visual effects to apply to the focused window.
   focused_window:
-    # Highlight the window with a colored border.
-    # ** Exclusive to Windows 11 due to API limitations.
+    # Highlight the window with a colored border. ** Exclusive to Windows 11 due to API limitations. border:
     border:
       enabled: true
-      color: '#8dbcff'
+      color: '#ffffff'
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -78,7 +77,7 @@ window_effects:
     corner_style:
       enabled: false
       # Allowed values: 'square', 'rounded', 'small_rounded'.
-      style: 'square'
+      style: 'small_rounded'
 
     # Change the transparency of the window.
     transparency:
@@ -218,7 +217,7 @@ keybindings:
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ['wm-cycle-focus']
-    bindings: ['alt+space']
+    bindings: ['alt+shift+ctrl+space']
 
   # Change the focused window to be floating.
   - commands: ['toggle-floating --centered']

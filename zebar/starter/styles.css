@@ -5,12 +5,12 @@
 @import 'https://www.nerdfonts.com/assets/css/webfont.css';
 
 i {
-  color: rgb(115 130 175 / 95%);
+  color: rgb(0 0 0);
   margin-right: 7px;
 }
 
 body {
-  color: rgb(255 255 255 / 90%);
+  color: rgb(0 0 0);
   font-family: ui-monospace, monospace;
   font-size: 12px;
   overflow: hidden;
@@ -23,8 +23,8 @@ body,
 }
 
 #root {
-  border-bottom: 1px solid rgb(255 255 255 / 5%);
-  background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%));
+  border-bottom: 0px;
+  background: '#ffffff'
 }
 
 .app {
@@ -66,28 +66,29 @@ body,
 }
 
 .workspace {
-  background: rgb(255 255 255 / 5%);
+  background: rgb(255 255 255);
   margin-right: 4px;
   padding: 4px 8px;
-  color: rgb(255 255 255 / 90%);
+  color: rgb(0 0 0);
   border: none;
   border-radius: 2px;
   cursor: pointer;
 
   &.displayed {
-    background: rgb(255 255 255 / 15%);
+    background: rgb(255 255 255);
   }
 
   &.focused,
   &:hover {
-    background: rgb(75 115 255 / 50%);
+    color: rgb(255 255 255);
+    background: rgb(0 0 0);
   }
 }
 
 .binding-mode,
 .tiling-direction {
-  background: rgb(255 255 255 / 15%);
-  color: rgb(255 255 255 / 90%);
+  background: rgb(0 0 0);
+  color: rgb(255 255 255);
   border-radius: 2px;
   line-height: 1;
   padding: 4px 8px;
