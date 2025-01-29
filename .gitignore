@@ -5,9 +5,8 @@ yarn/
 tmux/plugins/
 flutter/
 github-copilot/
-.DS_Store
 nvim/lua/private/
-raycast/
-karabiner/
 
 nvim/lazy-lock.json
+
+.DS_Store
