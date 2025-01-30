@@ -142,7 +142,7 @@ cmd-ctrl-4 = 'move-node-to-workspace 4'
 cmd-backtick = 'workspace-back-and-forth'
 cmd-shift-backtick = 'move-workspace-to-monitor --wrap-around next'
 
-' See: https://nikitabobko.github.io/AeroSpace/commands#mode
+# See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-ctrl-semicolon = 'mode service'
 
 # resize mode
