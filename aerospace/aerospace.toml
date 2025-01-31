@@ -29,10 +29,11 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
 [workspace-to-monitor-force-assignment]
-1 = 'secondary'
+
+1 = 'main'
 2 = 'secondary'
 3 = 'secondary'
-4 = 'built-in'
+4 = 'secondary'
 
 # [[on-window-detected]]
 # if.app-id = 'com.apple.systempreferences'
