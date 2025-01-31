@@ -30,10 +30,10 @@ automatically-unhide-macos-hidden-apps = false
 
 [workspace-to-monitor-force-assignment]
 
-1 = 'main'
-2 = 'secondary'
-3 = 'secondary'
-4 = 'secondary'
+1 = 'secondary'
+2 = 'main'
+3 = 'main'
+4 = 'main'
 
 # [[on-window-detected]]
 # if.app-id = 'com.apple.systempreferences'
