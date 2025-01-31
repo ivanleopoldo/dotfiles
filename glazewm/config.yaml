@@ -4,14 +4,12 @@ general:
   # Example: The below command launches Zebar.
   startup_commands: [
     'shell-exec zebar startup --config-dir="C:\Users\milk\.config\zebar"', 
-    'shell-exec C:/Users/milk/.config/glazewm/dist/glaze-auto-tiler.exe'
   ]
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
   shutdown_commands: [
     'shell-exec taskkill /IM zebar.exe /F', 
-    'shell-exec taskkill /IM glaze-auto-tiler.exe /F'
   ]
 
   # Commands to run after the WM config is reloaded.
@@ -114,7 +112,7 @@ window_behavior:
       centered: true
 
       # Whether to show floating windows as always on top.
-      shown_on_top: false
+      shown_on_top: true
 
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
@@ -140,9 +138,6 @@ window_rules:
       - window_title: { regex: '[Pp]icture.in.[Pp]icture' }
         window_class: { regex: 'Chrome_WidgetWin_1|MozillaDialogClass' }
 
-      - window_title: { equals: 'Arc picture in picture' }
-        window_class: { equals: 'WinUIDesktopWin32WindowClass' }
-
       # Ignore rules for various 3rd-party apps.
       - window_process: { equals: 'PowerToys' }
         window_class: { regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]' }
@@ -150,10 +145,15 @@ window_rules:
         window_title: { regex: '.*? - Peek' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper' }
+
   - commands: ['set-floating']
     match: 
       - window_process: { equals: "Flow.Launcher" }
         window_title: { equals: "Settings" }
+
+      - window_process: { equals: "Arc" }
+        window_title: { equals: 'Arc picture in picture' }
+        window_class: { equals: 'WinUIDesktopWin32WindowClass' }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
