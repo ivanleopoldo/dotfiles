@@ -39,7 +39,23 @@ bindkey '^Xc' copy-command
 # command hotkey
 bindkey -s '^Xgc' 'git commit -m ""\C-b'
 
+
 # git
+repo-open() {
+	if url=$(git remote get-url origin 2>/dev/null); then
+		if [[ $url == git@* ]]; then
+			url=${url/git@/https://}
+			url=${url/:/\//}
+		fi
+		open -u "$url"
+	else
+		print -Pn "%F{yellow}Not a git repository.%f\n"
+	fi
+}
+
+zle -N repo-open
+bindkey '^Xgb' repo-open
+
 alias gc="git commit -m"
 alias push="git push"
 alias pull="git pull"
