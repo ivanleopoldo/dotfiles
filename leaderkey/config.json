@@ -1,0 +1,218 @@
+{
+  "actions" : [
+    {
+      "key" : "a",
+      "label" : "caffeinate",
+      "type" : "url",
+      "value" : "raycast://extensions/mooxl/coffee/caffeinateToggle?launchType=background"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "a",
+          "type" : "application",
+          "value" : "/Applications/Arc.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/Ghostty.app"
+        },
+        {
+          "key" : "r",
+          "type" : "application",
+          "value" : "/System/Applications/Reminders.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/System/Applications/System Settings.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/System/Library/CoreServices/Finder.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/CleanupBuddy.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/Applications/OnyX.app"
+        }
+      ],
+      "iconPath" : "apps.iphone",
+      "key" : "w",
+      "label" : "applications",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "q",
+          "label" : "github",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fgithub.com%22%7D&launchType=background"
+        },
+        {
+          "key" : "w",
+          "label" : "youtube",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fwww.youtube.com%22%7D&launchType=background"
+        },
+        {
+          "key" : "x",
+          "label" : "messenger",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fwww.messenger.com%22%7D&launchType=background"
+        },
+        {
+          "key" : "f",
+          "label" : "facebook",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fwww.facebook.com%22%7D&launchType=background"
+        },
+        {
+          "key" : "g",
+          "label" : "gmail",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fmail.google.com%22%7D&launchType=background"
+        },
+        {
+          "key" : "n",
+          "label" : "new tab",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?launchType=background"
+        }
+      ],
+      "iconPath" : "globe",
+      "key" : "d",
+      "label" : "urls",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "h",
+          "label" : "left",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace join-with left"
+        },
+        {
+          "key" : "j",
+          "label" : "down",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace join-with down"
+        },
+        {
+          "key" : "k",
+          "label" : "up",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace join-with up"
+        },
+        {
+          "key" : "l",
+          "label" : "right",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace join-with right"
+        }
+      ],
+      "iconPath" : "l.joystick",
+      "key" : "j",
+      "label" : "join-with",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "a",
+          "label" : "accordion",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace layout accordion horizontal vertical"
+        },
+        {
+          "key" : "f",
+          "label" : "floating|tiling",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace layout floating tiling"
+        },
+        {
+          "key" : "t",
+          "label" : "tiles",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace layout tiles vertical horizontal"
+        }
+      ],
+      "iconPath" : "gearshift.layout.sixspeed",
+      "key" : "l",
+      "label" : "layout",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "r",
+          "label" : "reload aerospace config",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace reload-config"
+        },
+        {
+          "key" : "t",
+          "label" : "toggle aerospace",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace enable toggle"
+        },
+        {
+          "key" : "x",
+          "label" : "close all windows but focused",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace close-all-windows-but-current"
+        },
+        {
+          "key" : "s",
+          "label" : "make keyboard sound go nice make keyboard sound go *cricket*",
+          "type" : "command",
+          "value" : "osascript -e 'tell application \"Klack\" to toggle'"
+        },
+        {
+          "key" : "e",
+          "label" : "empty trash",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/empty-trash?launchType=background"
+        },
+        {
+          "key" : "b",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace balance-sizes"
+        }
+      ],
+      "iconPath" : "command.square.fill",
+      "key" : "q",
+      "label" : "system",
+      "type" : "group"
+    },
+    {
+      "key" : "r",
+      "label" : "reset tree",
+      "type" : "command",
+      "value" : "/opt/homebrew/bin/aerospace flatten-workspace-tree"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "r",
+          "label" : "resize mode",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace mode resize"
+        }
+      ],
+      "key" : "m",
+      "label" : "mode",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}
