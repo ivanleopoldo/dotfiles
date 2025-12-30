@@ -56,6 +56,7 @@ repo-open() {
 zle -N repo-open
 bindkey '^Xgb' repo-open
 
+alias ga="git add"
 alias gc="git commit -m"
 alias push="git push"
 alias pull="git pull"
