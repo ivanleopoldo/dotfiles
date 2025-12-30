@@ -19,6 +19,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
+bindkey ' ' magic-space
 
 alias ls="eza --color=always -a --long --git --no-filesize --icons=always --no-time --group-directories-first --no-user --no-permissions"
 alias lst="eza --tree --level=2 -a --color=always --long --git --no-filesize --icons=always --group-directories-first --no-time --no-user --no-permissions"
