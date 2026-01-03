@@ -58,6 +58,7 @@ bindkey '^Xgb' repo-open
 
 alias ga="git add"
 alias gc="git commit -m"
+alias add="git add ."
 alias push="git push"
 alias pull="git pull"
 
