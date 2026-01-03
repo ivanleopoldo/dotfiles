@@ -36,10 +36,6 @@ copy-command(){
 zle -N copy-command
 bindkey '^Xc' copy-command
 
-# command hotkey
-bindkey -s '^Xgc' 'git commit -m ""\C-b'
-
-
 # git
 repo-open() {
 	if url=$(git remote get-url origin 2>/dev/null); then
@@ -56,14 +52,17 @@ repo-open() {
 zle -N repo-open
 bindkey '^Xgb' repo-open
 
-alias ga="git add"
-alias gc="git commit -m"
+alias mv="zmv"
 alias add="git add ."
+alias commit="git commit -m"
 alias push="git push"
 alias pull="git pull"
 
-alias ghsc="gh repo create -s=."
+alias create="gh repo create -s=."
+alias createpu="create PU"
+alias createpe="create PE"
 alias -g PU="--public"
+alias -g PE="--private"
 
 # native replacements
 alias ls="eza --color=always -a --long --git --no-filesize --icons=always --no-time --group-directories-first --no-user --no-permissions"
