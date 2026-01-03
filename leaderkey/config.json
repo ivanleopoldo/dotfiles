@@ -42,6 +42,16 @@
           "key" : "m",
           "type" : "application",
           "value" : "/Applications/OnyX.app"
+        },
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Find Any File.app"
+        },
+        {
+          "key" : "e",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
         }
       ],
       "iconPath" : "apps.iphone",
@@ -80,6 +90,12 @@
           "label" : "gmail",
           "type" : "url",
           "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fmail.google.com%22%7D&launchType=background"
+        },
+        {
+          "key" : "c",
+          "label" : "chatgpt",
+          "type" : "url",
+          "value" : "raycast://extensions/the-browser-company/arc/new-tab?arguments=%7B%22url%22%3A%22https%3A%2F%2Fchat.openai.com%22%7D&launchType=background"
         },
         {
           "key" : "n",
@@ -178,15 +194,16 @@
           "value" : "osascript -e 'tell application \"Klack\" to toggle'"
         },
         {
-          "key" : "e",
-          "label" : "empty trash",
-          "type" : "url",
-          "value" : "raycast://extensions/raycast/system/empty-trash?launchType=background"
-        },
-        {
           "key" : "b",
+          "label" : "balance sizes",
           "type" : "command",
           "value" : "/opt/homebrew/bin/aerospace balance-sizes"
+        },
+        {
+          "key" : "a",
+          "label" : "resize mode",
+          "type" : "command",
+          "value" : "/opt/homebrew/bin/aerospace mode resize"
         }
       ],
       "iconPath" : "command.square.fill",
@@ -203,14 +220,14 @@
     {
       "actions" : [
         {
-          "key" : "r",
-          "label" : "resize mode",
-          "type" : "command",
-          "value" : "/opt/homebrew/bin/aerospace mode resize"
+          "key" : "e",
+          "label" : "empty trash",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/empty-trash?launchType=background"
         }
       ],
-      "key" : "m",
-      "label" : "mode",
+      "key" : "e",
+      "label" : "empty trash",
       "type" : "group"
     }
   ],
