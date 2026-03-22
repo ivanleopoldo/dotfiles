@@ -13,6 +13,8 @@ automatically-unhide-macos-hidden-apps = false
 2 = 'main'
 3 = 'main'
 4 = 'secondary'
+5 = 'secondary'
+6 = 'secondary'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'finder'
@@ -26,16 +28,40 @@ run = 'layout tiling'
 if.window-title-regex-substring= '.*Picture.*'
 run = ['layout floating']
 
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iphonesimulator'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'net.kovidgoyal.kitty'
+run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.bambulab.bambu-studio'
+run = 'move-node-to-workspace 5'
+
 [key-mapping]
 preset = 'qwerty'
 
 [gaps]
-inner.horizontal = 25
-inner.vertical =   25
-outer.left =       25
-outer.bottom =     25
+inner.horizontal = 13
+inner.vertical =   13
+outer.left =       13
+outer.bottom =     13
 outer.top =        13
-outer.right =      25
+outer.right =      13
 
 [mode.main.binding]
 cmd-h = []
@@ -55,11 +81,15 @@ cmd-1 = 'workspace 1'
 cmd-2 = 'workspace 2'
 cmd-3 = 'workspace 3'
 cmd-4 = 'workspace 4'
+cmd-5 = 'workspace 5'
+cmd-6 = 'workspace 6'
 
 cmd-ctrl-1 = 'move-node-to-workspace 1'
 cmd-ctrl-2 = 'move-node-to-workspace 2'
 cmd-ctrl-3 = 'move-node-to-workspace 3'
 cmd-ctrl-4 = 'move-node-to-workspace 4'
+cmd-ctrl-5 = 'move-node-to-workspace 5'
+cmd-ctrl-6 = 'move-node-to-workspace 6'
 
 cmd-backtick = 'workspace-back-and-forth'
 
