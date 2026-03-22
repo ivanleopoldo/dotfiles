@@ -1,5 +1,5 @@
 # path
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:/Users/milk/.bun/bin:/Library/TeX/texbin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin
 export ZSH="$HOME/.oh-my-zsh"
 
 # default editor
@@ -19,62 +19,18 @@ ZSH_THEME="robbyrussell"
 
 source $ZSH/oh-my-zsh.sh
 
-# edit command
-autoload -Uz edit-command-line
-zle -N edit-command-line
-bindkey '^x^e' edit-command-line
-
-bindkey ' ' magic-space
+set -o vi
 
 # better mv
 autoload zmv
 
-# copy command
-copy-command(){
-	echo -n $BUFFER | pbcopy
-}
-zle -N copy-command
-bindkey '^Xc' copy-command
-
-# git
-repo-open() {
-	if url=$(git remote get-url origin 2>/dev/null); then
-		if [[ $url == git@* ]]; then
-			url=${url/git@/https://}
-			url=${url/:/\//}
-		fi
-		open -u "$url"
-	else
-		print -Pn "%F{yellow}Not a git repository.%f\n"
-	fi
-}
-
-zle -N repo-open
-bindkey '^Xgb' repo-open
-
 alias mv="zmv"
-alias add="git add ."
-alias commit="git commit -m"
-alias push="git push"
-alias pull="git pull"
-
-alias create="gh repo create -s=."
-alias createpu="create PU"
-alias createpe="create PE"
-alias -g PU="--public"
-alias -g PE="--private"
 
 # native replacements
 alias ls="eza --color=always -a --long --git --no-filesize --icons=always --no-time --group-directories-first --no-user --no-permissions"
 alias lst="eza --tree --level=2 -a --color=always --long --git --no-filesize --icons=always --group-directories-first --no-time --no-user --no-permissions"
 alias cat="bat"
 alias cd="z"
-alias e="exit"
-alias c="clear"
-
-# zsh
-alias szsh="source ~/.zshrc"
-alias zshrc="nvim ~/.zshrc"
 
 # Python
 alias python="python3"
